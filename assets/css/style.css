@@ -12,6 +12,56 @@
   --card: #3a2a22;
 }
 
+#header h2 span,
+.nav-menu a:hover,
+.nav-menu .active > a,
+.nav-menu li:hover > a,
+.contact .info-box h3,
+.about-me .content h3,
+.about-me .content ul i,
+.resume .resume-item h4,
+.skills .progress-bar,
+.services .icon-box .icon,
+.services .icon-box:hover .icon i {
+  color: var(--accent) !important;
+}
+
+.services .icon-box .icon,
+.skills .progress-bar,
+.contact .php-email-form button[type="submit"] {
+  background: var(--accent) !important;
+}
+
+.resume .resume-item::before {
+  background: var(--accent) !important;
+  border-color: var(--accent) !important;
+}
+/* underline / small accent bars */
+.nav-menu a:before {
+  background-color: var(--accent) !important;
+}
+
+/* header social hover */
+#header .social-links a:hover {
+  background: var(--accent) !important;
+}
+
+/* contact icons */
+.contact .info-box i.bx {
+  color: var(--accent) !important;
+}
+
+/* services hover glow */
+.services .icon-box:hover .icon::before {
+  background: var(--accent) !important;
+}
+
+/* credits link */
+.credits a {
+  color: var(--accent) !important;
+}
+
+
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
