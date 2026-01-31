@@ -1308,3 +1308,35 @@ section .container{
 .credits a{ color: var(--dusty-grape); }
 .credits a:hover{ color: var(--space-indigo); }
 
+/* ===== Readability: replace leftover white text ===== */
+body,
+p,
+li,
+span,
+.small,
+.section-title p,
+.resume .resume-title,
+.resume .resume-item h5,
+.testimonials .testimonial-item h3,
+.services .icon-box h4 a,
+.services .icon-box p,
+.portfolio .portfolio-wrap .portfolio-info h4,
+.portfolio .portfolio-wrap .portfolio-info p,
+.contact .info-box p,
+.mobile-nav a {
+  color: #22223B !important; /* Space Indigo */
+}
+
+/* Slightly softer secondary text */
+.section-title h2,
+.testimonials .testimonial-item h4,
+.resume .resume-item h5,
+.counts .count-box p {
+  color: #4A4E69 !important; /* Dusty Grape */
+}
+
+/* If any icon/text is still white */
+i, .icon, .bx, .bi {
+  color: #22223B !important;
+}
+
