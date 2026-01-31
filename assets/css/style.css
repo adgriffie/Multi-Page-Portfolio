@@ -1,23 +1,26 @@
-/* ==========================================================
-   ✨ Addie Cozy Espresso Theme (drop-in override)
-   Put this at VERY TOP of style.css
-   ========================================================== */
+/**
+* Template Name: Personal - v2.1.0
+* Template URL: https://bootstrapmade.com/personal-free-resume-bootstrap-template/
+* Author: BootstrapMade.com
+* License: https://bootstrapmade.com/license/
+*/
 
 :root {
   --accent: #C97B3C;   /* soft copper */
   --bg: linear-gradient(135deg, #2b1f1a, #3a2a22);
   --text: #F5F3EF;
-  --card: #3f2e26;
+  --card: rgba(74, 54, 45, 0.72); /* lighter cards */
 }
 
-/* ---------- Base text + background ---------- */
-
+/* --- Global base --- */
 body {
+  font-family: "Open Sans", sans-serif;
   color: var(--text);
   position: relative;
   background: transparent;
 }
 
+/* Background overlay (must NOT block clicks) */
 body::before {
   content: "";
   position: fixed;
@@ -25,63 +28,72 @@ body::before {
   background: var(--bg);
   background-size: cover;
   z-index: -1;
+  pointer-events: none; /* CRITICAL: prevents nav from breaking */
 }
 
-/* ---------- Links / accent text ---------- */
+@media (min-width: 1024px) {
+  body::before {
+    background-attachment: fixed;
+  }
+}
 
+/* Links */
 a {
   color: var(--accent);
 }
-
 a:hover {
   color: var(--accent);
+  text-decoration: none;
 }
 
-/* Replace all template greens */
+/* Headings font (template default) */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Raleway", sans-serif;
+}
+
+/* --- Kill the neon + navy quickly --- */
 #header h2,
-#header h2 span,
 .nav-menu a:hover,
 .nav-menu .active > a,
 .nav-menu li:hover > a,
 .about-me .content h3,
 .about-me .content ul i,
-.contact .info-box h3,
 .resume .resume-item h4,
-.counts .count-box i {
+.counts .count-box i,
+.contact .info-box h3 {
   color: var(--accent) !important;
 }
 
-/* ---------- Accent backgrounds ---------- */
-
-.services .icon-box .icon,
-.skills .progress-bar,
-.contact .php-email-form button[type="submit"],
-.portfolio #portfolio-flters li:hover,
-.portfolio #portfolio-flters li.filter-active {
-  background: var(--accent) !important;
+/* Replace navy card backgrounds */
+.services .icon-box,
+.interests .icon-box,
+.contact .info-box,
+.counts .count-box,
+section .container {
+  background: var(--card) !important;
 }
 
-/* Resume timeline dot */
+/* Replace green accent backgrounds */
+.skills .progress-bar,
+.services .icon-box .icon,
+.contact .php-email-form button[type="submit"],
+.portfolio #portfolio-flters li:hover,
+.portfolio #portfolio-flters li.filter-active,
 .resume .resume-item::before {
   background: var(--accent) !important;
   border-color: var(--accent) !important;
 }
 
-/* ---------- Card backgrounds (replace navy) ---------- */
-
-.services .icon-box,
-.interests .icon-box,
-.contact .info-box,
-.counts .count-box {
-  background: var(--card) !important;
+/* Make the header-top bar espresso (instead of navy) */
+#header.header-top {
+  background: rgba(43, 31, 26, 0.92) !important;
+  backdrop-filter: blur(10px);
 }
 
-/* ---------- Optional: softer hover glow ---------- */
-
-.services .icon-box:hover {
-  filter: brightness(1.1);
+/* Nav underline color */
+.nav-menu a:before {
+  background-color: var(--accent) !important;
 }
-
 
 
 /*--------------------------------------------------------------
