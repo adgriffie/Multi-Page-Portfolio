@@ -104,19 +104,19 @@ body {
 body::before {
   content: "";
   position: fixed;
+  inset: 0;                 /* replaces left/right/top/height */
   background: var(--bg);
   background-size: cover;
-  left: 0;
-  right: 0;
-  top: 0;
-  height: 100vh;
+  z-index: -1;
+  pointer-events: none;
 }
 
 @media (min-width: 1024px) {
   body::before {
     background-attachment: fixed;
   }
-   
+} /* ✅ THIS was missing */
+
 a {
   color: var(--accent);
 }
@@ -129,6 +129,7 @@ a:hover {
 h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway", sans-serif;
 }
+
 
 /*--------------------------------------------------------------
 # Header
