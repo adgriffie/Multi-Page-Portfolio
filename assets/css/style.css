@@ -1431,4 +1431,28 @@ i, .icon, .bx, .bi {
   max-width: 100%;
   object-fit: contain;
 }
+.project-card {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 24px rgba(0,0,0,.12);
+}
+
+.portfolio-wrap {
+  background: #fff;
+  border-radius: 12px;
+  padding: 18px;
+}
+
+.portfolio-wrap img {
+  height: 180px;
+  width: 100%;
+  object-fit: contain;
+}
+
 
