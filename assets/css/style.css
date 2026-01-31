@@ -5,30 +5,25 @@
 * License: https://bootstrapmade.com/license/
 */
 
-:root {
-  --accent: #C97B3C;   /* soft copper */
-  --bg: linear-gradient(135deg, #2b1f1a, #3a2a22);
-  --text: #F5F3EF;
-  --card: rgba(74, 54, 45, 0.72); /* lighter cards */
-}
-
-/* --- Global base --- */
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
 body {
   font-family: "Open Sans", sans-serif;
-  color: var(--text);
+  color: #fff;
   position: relative;
   background: transparent;
 }
 
-/* Background overlay (must NOT block clicks) */
 body::before {
   content: "";
   position: fixed;
-  inset: 0;
-  background: var(--bg);
+  background: #010e1b;
   background-size: cover;
-  z-index: -1;
-  pointer-events: none; /* CRITICAL: prevents nav from breaking */
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 100vh;
 }
 
 @media (min-width: 1024px) {
@@ -37,64 +32,18 @@ body::before {
   }
 }
 
-/* Links */
 a {
-  color: var(--accent);
+  color: #12d640;
 }
+
 a:hover {
-  color: var(--accent);
+  color: #12d640;
   text-decoration: none;
 }
 
-/* Headings font (template default) */
 h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway", sans-serif;
 }
-
-/* --- Kill the neon + navy quickly --- */
-#header h2,
-.nav-menu a:hover,
-.nav-menu .active > a,
-.nav-menu li:hover > a,
-.about-me .content h3,
-.about-me .content ul i,
-.resume .resume-item h4,
-.counts .count-box i,
-.contact .info-box h3 {
-  color: var(--accent) !important;
-}
-
-/* Replace navy card backgrounds */
-.services .icon-box,
-.interests .icon-box,
-.contact .info-box,
-.counts .count-box,
-section .container {
-  background: var(--card) !important;
-}
-
-/* Replace green accent backgrounds */
-.skills .progress-bar,
-.services .icon-box .icon,
-.contact .php-email-form button[type="submit"],
-.portfolio #portfolio-flters li:hover,
-.portfolio #portfolio-flters li.filter-active,
-.resume .resume-item::before {
-  background: var(--accent) !important;
-  border-color: var(--accent) !important;
-}
-
-/* Make the header-top bar espresso (instead of navy) */
-  #header.header-top {
-    background: rgba(43, 31, 26, 0.92) !important;
-    backdrop-filter: blur(10px);
-  }
-}
-/* Nav underline color */
-.nav-menu a:before {
-  background-color: var(--accent) !important;
-}
-
 
 /*--------------------------------------------------------------
 # Header
@@ -131,7 +80,7 @@ section .container {
 #header h2 {
   font-size: 24px;
   margin-top: 20px;
-  color: var(--accent);
+  color: #12d640;
 }
 
 #header h2 span {
@@ -184,10 +133,6 @@ section .container {
     flex-direction: column;
     align-items: center;
   }
-   /* Override the navy top bar */
-#header.header-top {
-  background: rgba(43, 31, 26, 0.92) !important;  /* warm espresso */
-  backdrop-filter: blur(10px);
 }
 
 /*--------------------------------------------------------------
@@ -237,7 +182,7 @@ section .container {
 }
 
 .nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
-  color: var(--accent);
+  color: #12d640;
   text-decoration: none;
 }
 
@@ -782,7 +727,7 @@ section .container {
 }
 
 .services .icon-box:hover h4 a, .services .icon-box:hover p {
-  color: var(--accent);
+  color: #12d640;
 }
 
 /*--------------------------------------------------------------
@@ -991,7 +936,7 @@ section .container {
 }
 
 .contact .info-box .social-links a:hover {
-  color: var(--accent);
+  color: #12d640;
 }
 
 .contact .php-email-form {
@@ -1151,16 +1096,3 @@ section .container {
     transform: translateX(-50%);
   }
 }
-/*--------------------------------------------------------------
-# Custom – Education logos
---------------------------------------------------------------*/
-.education-logo {
-  height: 120px;
-  width: auto;
-  object-fit: contain;
-  display: block;
-  margin: 0 auto;
-}
-
-
-
