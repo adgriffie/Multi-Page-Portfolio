@@ -85,11 +85,11 @@ section .container {
 }
 
 /* Make the header-top bar espresso (instead of navy) */
-#header.header-top {
-  background: rgba(43, 31, 26, 0.92) !important;
-  backdrop-filter: blur(10px);
+  #header.header-top {
+    background: rgba(43, 31, 26, 0.92) !important;
+    backdrop-filter: blur(10px);
+  }
 }
-
 /* Nav underline color */
 .nav-menu a:before {
   background-color: var(--accent) !important;
