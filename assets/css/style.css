@@ -1096,3 +1096,14 @@ section .container {
     transform: translateX(-50%);
   }
 }
+/*--------------------------------------------------------------
+# Custom – Education logos
+--------------------------------------------------------------*/
+.education-logo {
+  height: 120px;
+  width: auto;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+}
+
