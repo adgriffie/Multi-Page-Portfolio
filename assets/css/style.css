@@ -1,120 +1,18 @@
-/**
-* Template Name: Personal - v2.1.0
-* Template URL: https://bootstrapmade.com/personal-free-resume-bootstrap-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
 /* ==========================================================
-   ✨ Addie Cozy Espresso Theme — TOP OVERRIDES
-   Paste at VERY TOP of style.css
+   ✨ Addie Cozy Espresso Theme (drop-in override)
+   Put this at VERY TOP of style.css
    ========================================================== */
 
-:root{
+:root {
   --accent: #C97B3C;   /* soft copper */
   --bg: linear-gradient(135deg, #2b1f1a, #3a2a22);
   --text: #F5F3EF;
-  --card: #4a362d;     /* lighter box color */
+  --card: #3f2e26;
 }
 
-/* ---------- Global base ---------- */
-body{
-  font-family: "Open Sans", sans-serif;
-  color: var(--text);
-  position: relative;
-  background: transparent;
-}
+/* ---------- Base text + background ---------- */
 
-/* Background overlay (safe: behind everything + doesn't block clicks) */
-body::before{
-  content:"";
-  position: fixed;
-  inset: 0;
-  background: var(--bg);
-  background-size: cover;
-  background-position: center;
-  z-index: -1;
-  pointer-events: none;
-}
-
-@media (min-width: 1024px){
-  body::before{ background-attachment: fixed; }
-}
-
-a{ color: var(--accent); }
-a:hover{
-  color: var(--accent);
-  text-decoration: none;
-}
-
-h1,h2,h3,h4,h5,h6{
-  font-family: "Raleway", sans-serif;
-}
-
-/* ---------- Kill template yellow/green accents ---------- */
-#header h2,
-#header h2 span,
-.about-me .content h3,
-.about-me .content ul i,
-.contact .info-box h3,
-.resume .resume-item h4,
-.counts .count-box i{
-  color: var(--accent) !important;
-}
-
-/* Remove the green underline + yellow span styling */
-#header h2 span{
-  border-bottom-color: var(--accent) !important;
-}
-
-/* Nav hover/active colors + underline */
-.nav-menu a:hover,
-.nav-menu .active > a,
-.nav-menu li:hover > a{
-  color: var(--accent) !important;
-}
-.nav-menu a:before{
-  background-color: var(--accent) !important;
-}
-
-/* Buttons / bars that used to be green */
-.skills .progress-bar,
-.services .icon-box .icon,
-.contact .php-email-form button[type="submit"],
-.portfolio #portfolio-flters li:hover,
-.portfolio #portfolio-flters li.filter-active,
-.resume .resume-item::before{
-  background: var(--accent) !important;
-  border-color: var(--accent) !important;
-}
-
-/* Replace navy boxes with warmer card tone */
-.services .icon-box,
-.interests .icon-box,
-.contact .info-box,
-.counts .count-box{
-  background: rgba(74, 54, 45, 0.72) !important;
-}
-
-/* Top sticky header bar (was navy) */
-#header.header-top{
-  background: rgba(43, 31, 26, 0.92) !important;
-  backdrop-filter: blur(10px);
-}
-
-/* Softer hover */
-.services .icon-box:hover,
-.interests .icon-box:hover{
-  filter: brightness(1.08);
-}
-
-
-
-/*--------------------------------------------------------------
-# General
---------------------------------------------------------------*/
 body {
-  font-family: "Open Sans", sans-serif;
   color: var(--text);
   position: relative;
   background: transparent;
@@ -123,18 +21,13 @@ body {
 body::before {
   content: "";
   position: fixed;
-  inset: 0;                 /* replaces left/right/top/height */
+  inset: 0;
   background: var(--bg);
   background-size: cover;
   z-index: -1;
-  pointer-events: none;
 }
 
-@media (min-width: 1024px) {
-  body::before {
-    background-attachment: fixed;
-  }
-} /* ✅ THIS was missing */
+/* ---------- Links / accent text ---------- */
 
 a {
   color: var(--accent);
@@ -142,12 +35,53 @@ a {
 
 a:hover {
   color: var(--accent);
-  text-decoration: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Raleway", sans-serif;
+/* Replace all template greens */
+#header h2,
+#header h2 span,
+.nav-menu a:hover,
+.nav-menu .active > a,
+.nav-menu li:hover > a,
+.about-me .content h3,
+.about-me .content ul i,
+.contact .info-box h3,
+.resume .resume-item h4,
+.counts .count-box i {
+  color: var(--accent) !important;
 }
+
+/* ---------- Accent backgrounds ---------- */
+
+.services .icon-box .icon,
+.skills .progress-bar,
+.contact .php-email-form button[type="submit"],
+.portfolio #portfolio-flters li:hover,
+.portfolio #portfolio-flters li.filter-active {
+  background: var(--accent) !important;
+}
+
+/* Resume timeline dot */
+.resume .resume-item::before {
+  background: var(--accent) !important;
+  border-color: var(--accent) !important;
+}
+
+/* ---------- Card backgrounds (replace navy) ---------- */
+
+.services .icon-box,
+.interests .icon-box,
+.contact .info-box,
+.counts .count-box {
+  background: var(--card) !important;
+}
+
+/* ---------- Optional: softer hover glow ---------- */
+
+.services .icon-box:hover {
+  filter: brightness(1.1);
+}
+
 
 
 /*--------------------------------------------------------------
