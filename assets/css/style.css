@@ -1339,4 +1339,13 @@ span,
 i, .icon, .bx, .bi {
   color: #22223B !important;
 }
+/* Header tagline colors */
+#header h2 {
+  color: #22223B !important;   /* Space Indigo for “I’m” */
+}
+
+#header .typing {
+  color: #4A4E69 !important;   /* Dusty Grape for typed words */
+}
+
 
