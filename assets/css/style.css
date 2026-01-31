@@ -1394,5 +1394,16 @@ i, .icon, .bx, .bi {
   display: block;
 }
 
+/* Certifications: stop portfolio JS from absolute-positioning items */
+.portfolio-container {
+  position: static !important;
+  height: auto !important;
+}
+
+.portfolio-container .portfolio-item {
+  position: static !important;
+  left: auto !important;
+  top: auto !important;
+}
 
 
