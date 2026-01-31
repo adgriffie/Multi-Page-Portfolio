@@ -6,6 +6,13 @@
 */
 
 :root {
+  --accent: #E9A23B; /* warm gold */
+  --bg: linear-gradient(135deg, #2d1f1a, #3b2a22); /* cozy espresso */
+  --text: #f3f4f6;
+  --card: #3a2a22;
+}
+
+:root {
   --accent: #4F8EF7;
 }
 
@@ -14,7 +21,9 @@
 --------------------------------------------------------------*/
 body {
   font-family: "Open Sans", sans-serif;
-  color: #fff;
+  color: var(--text);
+}
+
   position: relative;
   background: transparent;
 }
@@ -22,7 +31,9 @@ body {
 body::before {
   content: "";
   position: fixed;
-  background: #010e1b;
+  background: var(--bg);
+}
+
   background-size: cover;
   left: 0;
   right: 0;
