@@ -5,6 +5,15 @@
 * License: https://bootstrapmade.com/license/
 */
 
+/* --- Addie palette --- */
+:root{
+  --space-indigo: #22223B;
+  --dusty-grape:  #4A4E69;
+  --lilac-ash:    #9A8C98;
+  --almond-silk:  #C9ADA7;
+  --seashell:     #F2E9E4;
+}
+
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -1096,3 +1105,206 @@ section .container {
     transform: translateX(-50%);
   }
 }
+
+/* --------------------------------------------------------------
+# Palette Override (paste at very bottom)
+-------------------------------------------------------------- */
+
+/* Background + base text */
+body{
+  background: var(--seashell);
+  color: var(--space-indigo);
+}
+
+body::before{
+  background: var(--seashell) !important; /* replaces the old dark fixed background */
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6{
+  color: var(--space-indigo);
+}
+
+/* Links */
+a{ color: var(--dusty-grape); }
+a:hover{ color: var(--space-indigo); text-decoration: none; }
+
+/* Header */
+#header h1 a, #header h1 a:hover{ color: var(--space-indigo); }
+#header h2{ color: var(--dusty-grape); }
+#header h2 span{
+  color: var(--space-indigo);
+  border-bottom: 2px solid var(--almond-silk);
+}
+
+/* Social icons */
+#header .social-links a{
+  background: rgba(74, 78, 105, 0.18); /* dusty-grape tint */
+  color: var(--space-indigo);
+}
+#header .social-links a:hover{
+  background: var(--almond-silk);
+  color: var(--space-indigo);
+}
+
+/* Nav */
+.nav-menu a{ color: var(--space-indigo); }
+.nav-menu a:before{ background-color: var(--almond-silk); }
+.nav-menu a:hover,
+.nav-menu .active > a,
+.nav-menu li:hover > a{
+  color: var(--dusty-grape);
+}
+
+/* Mobile nav accents */
+.mobile-nav{
+  background: rgba(242, 233, 228, 0.92);
+  border: 2px solid rgba(154, 140, 152, 0.45); /* lilac ash tint */
+}
+.mobile-nav a{ color: var(--space-indigo); }
+.mobile-nav a:hover,
+.mobile-nav .active > a,
+.mobile-nav li:hover > a{
+  color: var(--dusty-grape);
+}
+
+/* Header-top bar (removes navy) */
+#header.header-top{
+  background: rgba(201, 173, 167, 0.55); /* almond tint */
+  backdrop-filter: blur(6px);
+}
+
+/* Sections */
+section .container{
+  background: rgba(242, 233, 228, 0.88); /* seashell tint */
+  border: 1px solid rgba(154, 140, 152, 0.35); /* lilac tint */
+}
+
+/* Section titles */
+.section-title h2{ color: var(--dusty-grape); }
+.section-title h2::after{ background: var(--lilac-ash); }
+.section-title p{ color: var(--space-indigo); }
+
+/* About */
+.about-me .content h3{ color: var(--dusty-grape); }
+.about-me .content ul i{ color: var(--dusty-grape); }
+
+/* Counts */
+.counts .count-box{
+  background: rgba(201, 173, 167, 0.18); /* almond tint */
+  color: var(--space-indigo);
+}
+.counts .count-box i{ color: var(--dusty-grape); }
+
+/* Skills */
+.skills .progress .skill{ color: var(--space-indigo); }
+.skills .progress-bar-wrap{ background: rgba(154, 140, 152, 0.25); }
+.skills .progress-bar{ background-color: var(--dusty-grape); }
+
+/* Interests cards (removes navy) */
+.interests .icon-box{
+  background: rgba(201, 173, 167, 0.22);
+  border: 1px solid rgba(154, 140, 152, 0.35);
+}
+.interests .icon-box h3{ color: var(--space-indigo); }
+.interests .icon-box:hover{
+  background: rgba(154, 140, 152, 0.22);
+}
+
+/* Testimonials */
+.testimonials .testimonial-item h3{ color: var(--space-indigo); }
+.testimonials .testimonial-item h4{ color: var(--dusty-grape); }
+.testimonials .testimonial-item p{ background: rgba(201, 173, 167, 0.20); color: var(--space-indigo); }
+.testimonials .owl-dot.active{ background-color: var(--dusty-grape) !important; }
+
+/* Resume */
+.resume .resume-title{ color: var(--space-indigo); }
+.resume .resume-item h4{ color: var(--dusty-grape); }
+.resume .resume-item{ border-left: 2px solid rgba(154, 140, 152, 0.45); }
+.resume .resume-item::before{
+  background: var(--almond-silk);
+  border: 2px solid var(--almond-silk);
+}
+
+/* Services (removes navy + green) */
+.services .icon-box{
+  background: rgba(201, 173, 167, 0.20);
+  border: 1px solid rgba(154, 140, 152, 0.35);
+}
+.services .icon-box .icon{ background: var(--dusty-grape); }
+.services .icon-box:hover{
+  background: rgba(154, 140, 152, 0.20);
+  border-color: var(--dusty-grape);
+}
+.services .icon-box:hover .icon{
+  background: var(--almond-silk);
+}
+.services .icon-box:hover .icon i{
+  color: var(--space-indigo);
+}
+.services .icon-box:hover h4 a,
+.services .icon-box:hover p{
+  color: var(--space-indigo);
+}
+
+/* Portfolio */
+.portfolio #portfolio-flters li{
+  color: var(--space-indigo);
+  background: rgba(201, 173, 167, 0.22);
+}
+.portfolio #portfolio-flters li:hover,
+.portfolio #portfolio-flters li.filter-active{
+  background: var(--dusty-grape);
+  color: var(--seashell);
+}
+.portfolio .portfolio-wrap{
+  background: rgba(34, 34, 59, 0.06); /* space-indigo tint */
+}
+.portfolio .portfolio-wrap::before{
+  background: rgba(154, 140, 152, 0.22);
+}
+.portfolio .portfolio-wrap .portfolio-info h4,
+.portfolio .portfolio-wrap .portfolio-info p{
+  color: var(--space-indigo);
+}
+.portfolio .portfolio-wrap .portfolio-links a{ color: var(--space-indigo); }
+.portfolio .portfolio-wrap .portfolio-links a:hover{ color: var(--dusty-grape); }
+
+/* Contact */
+.contact .info-box{
+  background: rgba(201, 173, 167, 0.20);
+  border: 1px solid rgba(154, 140, 152, 0.35);
+  color: var(--space-indigo);
+}
+.contact .info-box i.bx{
+  color: var(--space-indigo);
+  background: rgba(74, 78, 105, 0.14);
+}
+.contact .info-box h3{ color: var(--dusty-grape); }
+.contact .info-box p{ color: var(--space-indigo); }
+.contact .info-box .social-links a{ color: var(--space-indigo); }
+.contact .info-box .social-links a:hover{ color: var(--dusty-grape); }
+
+/* Form */
+.contact .php-email-form{
+  background: rgba(201, 173, 167, 0.16);
+  border: 1px solid rgba(154, 140, 152, 0.28);
+}
+.contact .php-email-form input,
+.contact .php-email-form textarea{
+  background: rgba(242, 233, 228, 0.92);
+  color: var(--space-indigo);
+}
+.contact .php-email-form button[type="submit"]{
+  background: var(--dusty-grape);
+  color: var(--seashell);
+}
+.contact .php-email-form button[type="submit"]:hover{
+  background: var(--space-indigo);
+}
+
+/* Credits */
+.credits{ color: var(--space-indigo); }
+.credits a{ color: var(--dusty-grape); }
+.credits a:hover{ color: var(--space-indigo); }
+
