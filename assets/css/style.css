@@ -6,11 +6,12 @@
 */
 
 :root {
-  --accent: #E9A23B; /* warm gold */
-  --bg: linear-gradient(135deg, #2d1f1a, #3b2a22); /* cozy espresso */
-  --text: #f3f4f6;
-  --card: #3a2a22;
+  --accent: #C97B3C;   /* soft copper */
+  --bg: linear-gradient(135deg, #2b1f1a, #3a2a22);
+  --text: #F5F3EF;
+  --card: #3f2e26;
 }
+
 
 #header h2 span,
 .nav-menu a:hover,
