@@ -1376,19 +1376,22 @@ i, .icon, .bx, .bi {
 }
 /* ===== Education logos uniform sizing ===== */
 
+/* ===== PERFECTLY MATCHED LOGO SIZING ===== */
+
 .edu-logo-wrap {
-  height: 180px;              /* SAME visual height for all logos */
+  height: 180px;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 20px;
-  background: #fff;           /* keeps cards clean */
+  overflow: hidden;   /* hides extra whitespace inside images */
 }
 
 .education-logo {
-  max-height: 100%;
-  max-width: 90%;
-  object-fit: contain;        /* preserves proportions */
+  height: 100%;       /* force same visual height */
+  width: auto;
+  object-fit: contain;
 }
+
 
 
