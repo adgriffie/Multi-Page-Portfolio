@@ -1353,5 +1353,26 @@ i, .icon, .bx, .bi {
   color: #4A4E69 !important;
 }
 
+/* ===== KILL GREEN CHEVRONS (covers icons + pseudo-elements) ===== */
+
+/* If the chevron is an <i> icon */
+.about-me .content ul li i,
+.about-me .content ul i,
+.about-me .content ul li i::before {
+  color: #4A4E69 !important;        /* Dusty Grape */
+}
+
+/* If the chevron is drawn with a ::before on the <li> (common in templates) */
+.about-me .content ul li::before {
+  color: #4A4E69 !important;
+  border-color: #4A4E69 !important;
+}
+
+/* If it’s an SVG (rare, but this handles it) */
+.about-me .content ul li svg,
+.about-me .content ul li svg * {
+  fill: #4A4E69 !important;
+  stroke: #4A4E69 !important;
+}
 
 
