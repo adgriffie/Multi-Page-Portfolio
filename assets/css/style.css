@@ -5,6 +5,11 @@
 * License: https://bootstrapmade.com/license/
 */
 
+/* ==========================================================
+   ✨ Addie Cozy Espresso Theme (drop-in override)
+   Put this at VERY TOP of style.css
+   ========================================================== */
+
 :root {
   --accent: #C97B3C;   /* soft copper */
   --bg: linear-gradient(135deg, #2b1f1a, #3a2a22);
@@ -12,55 +17,78 @@
   --card: #3f2e26;
 }
 
+/* ---------- Base text + background ---------- */
 
+body {
+  color: var(--text);
+  position: relative;
+  background: transparent;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: var(--bg);
+  background-size: cover;
+  z-index: -1;
+}
+
+/* ---------- Links / accent text ---------- */
+
+a {
+  color: var(--accent);
+}
+
+a:hover {
+  color: var(--accent);
+}
+
+/* Replace all template greens */
+#header h2,
 #header h2 span,
 .nav-menu a:hover,
 .nav-menu .active > a,
 .nav-menu li:hover > a,
-.contact .info-box h3,
 .about-me .content h3,
 .about-me .content ul i,
+.contact .info-box h3,
 .resume .resume-item h4,
-.skills .progress-bar,
-.services .icon-box .icon,
-.services .icon-box:hover .icon i {
+.counts .count-box i {
   color: var(--accent) !important;
 }
 
+/* ---------- Accent backgrounds ---------- */
+
 .services .icon-box .icon,
 .skills .progress-bar,
-.contact .php-email-form button[type="submit"] {
+.contact .php-email-form button[type="submit"],
+.portfolio #portfolio-flters li:hover,
+.portfolio #portfolio-flters li.filter-active {
   background: var(--accent) !important;
 }
 
+/* Resume timeline dot */
 .resume .resume-item::before {
   background: var(--accent) !important;
   border-color: var(--accent) !important;
 }
-/* underline / small accent bars */
-.nav-menu a:before {
-  background-color: var(--accent) !important;
+
+/* ---------- Card backgrounds (replace navy) ---------- */
+
+.services .icon-box,
+.interests .icon-box,
+.contact .info-box,
+.counts .count-box {
+  background: var(--card) !important;
 }
 
-/* header social hover */
-#header .social-links a:hover {
-  background: var(--accent) !important;
+/* ---------- Optional: softer hover glow ---------- */
+
+.services .icon-box:hover {
+  filter: brightness(1.1);
 }
 
-/* contact icons */
-.contact .info-box i.bx {
-  color: var(--accent) !important;
-}
-
-/* services hover glow */
-.services .icon-box:hover .icon::before {
-  background: var(--accent) !important;
-}
-
-/* credits link */
-.credits a {
-  color: var(--accent) !important;
-}
 
 
 /*--------------------------------------------------------------
