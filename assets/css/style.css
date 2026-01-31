@@ -219,6 +219,10 @@ h1, h2, h3, h4, h5, h6 {
     flex-direction: column;
     align-items: center;
   }
+   /* Override the navy top bar */
+#header.header-top {
+  background: rgba(43, 31, 26, 0.92) !important;  /* warm espresso */
+  backdrop-filter: blur(10px);
 }
 
 /*--------------------------------------------------------------
