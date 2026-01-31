@@ -1374,24 +1374,24 @@ i, .icon, .bx, .bi {
   fill: #4A4E69 !important;
   stroke: #4A4E69 !important;
 }
-/* ===== Education logos uniform sizing ===== */
 
-/* ===== PERFECTLY MATCHED LOGO SIZING ===== */
+/* ===== Education logos: uniform sizing (safe with Bootstrap) ===== */
 
-.edu-logo-wrap {
-  height: 180px;
+.edu-logo-wrap{
+  height: 160px;          /* adjust if you want bigger/smaller */
   width: 100%;
+  background: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden;   /* hides extra whitespace inside images */
+  overflow: hidden;
+  border-radius: 10px;
 }
 
-.education-logo {
-  height: 100%;       /* force same visual height */
-  width: auto;
-  object-fit: contain;
+.edu-logo-wrap img.education-logo{
+  height: 100%;
+  width: 100%;
+  object-fit: contain;    /* keeps logo intact */
 }
-
 
 
