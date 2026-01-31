@@ -1376,9 +1376,8 @@ i, .icon, .bx, .bi {
 }
 
 /* ===== Education logos: uniform sizing (safe with Bootstrap) ===== */
-
 .edu-logo-wrap{
-  height: 160px;          /* adjust if you want bigger/smaller */
+  height: 160px;
   width: 100%;
   background: #fff;
   display: flex;
@@ -1388,10 +1387,12 @@ i, .icon, .bx, .bi {
   border-radius: 10px;
 }
 
-.edu-logo-wrap img.education-logo{
-  height: 100%;
+.education-logo{
   width: 100%;
-  object-fit: contain;    /* keeps logo intact */
+  height: 100%;
+  object-fit: contain;
+  display: block;
 }
+
 
 
