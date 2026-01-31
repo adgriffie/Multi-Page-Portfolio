@@ -1348,4 +1348,10 @@ i, .icon, .bx, .bi {
   color: #4A4E69 !important;   /* Dusty Grape for typed words */
 }
 
+/* FORCE About arrows to Dusty Grape */
+.about-me .content ul i.icofont-rounded-right {
+  color: #4A4E69 !important;
+}
+
+
 
