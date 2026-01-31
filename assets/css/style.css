@@ -1374,5 +1374,21 @@ i, .icon, .bx, .bi {
   fill: #4A4E69 !important;
   stroke: #4A4E69 !important;
 }
+/* ===== Education logos uniform sizing ===== */
+
+.edu-logo-wrap {
+  height: 180px;              /* SAME visual height for all logos */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: #fff;           /* keeps cards clean */
+}
+
+.education-logo {
+  max-height: 100%;
+  max-width: 90%;
+  object-fit: contain;        /* preserves proportions */
+}
 
 
