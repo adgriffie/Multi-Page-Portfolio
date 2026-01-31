@@ -1196,4 +1196,93 @@ section .container {
   display: block;
   margin: 0 auto;
 }
+/* ==========================================================
+   ✨ Addie Cozy Espresso Theme — FINAL OVERRIDES
+   Put this at the VERY BOTTOM of style.css
+   ========================================================== */
+
+:root{
+  --accent: #C97B3C;   /* soft copper */
+  --bg: linear-gradient(135deg, #2b1f1a, #3a2a22);
+  --text: #F5F3EF;
+  --card: #4a362d;     /* slightly lighter box color */
+}
+
+/* Background + text */
+body{
+  color: var(--text) !important;
+}
+body::before{
+  content:"";
+  position: fixed;
+  inset: 0;
+  background: var(--bg) !important;
+  background-size: cover;
+  z-index: -1;
+}
+
+/* LINKS */
+a, a:hover{
+  color: var(--accent) !important;
+}
+
+/* Kill the template yellow/green accent bits */
+#header h2,
+#header h2 span{
+  color: var(--accent) !important;
+  border-bottom-color: var(--accent) !important; /* removes green underline */
+}
+
+/* NAVY TOP BAR -> espresso */
+#header.header-top{
+  background: rgba(43, 31, 26, 0.92) !important;
+  backdrop-filter: blur(10px);
+}
+
+/* Nav link underline + active color */
+.nav-menu a:hover,
+.nav-menu .active > a,
+.nav-menu li:hover > a{
+  color: var(--accent) !important;
+}
+.nav-menu a:before{
+  background-color: var(--accent) !important;
+}
+
+/* Replace remaining template greens */
+.about-me .content h3,
+.about-me .content ul i,
+.contact .info-box h3,
+.resume .resume-item h4,
+.counts .count-box i{
+  color: var(--accent) !important;
+}
+
+/* Accent backgrounds */
+.skills .progress-bar,
+.services .icon-box .icon,
+.contact .php-email-form button[type="submit"],
+.portfolio #portfolio-flters li:hover,
+.portfolio #portfolio-flters li.filter-active,
+.resume .resume-item::before{
+  background: var(--accent) !important;
+  border-color: var(--accent) !important;
+}
+
+/* Make the “boxes” lighter */
+.services .icon-box,
+.interests .icon-box,
+.contact .info-box,
+.counts .count-box,
+.resume .resume-item,
+section .container{
+  background: rgba(74, 54, 45, 0.72) !important; /* lighter, readable */
+}
+
+/* Optional: soften hover without weird neon */
+.services .icon-box:hover,
+.interests .icon-box:hover{
+  filter: brightness(1.08);
+}
+
 
