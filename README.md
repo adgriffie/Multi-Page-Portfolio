@@ -1,3 +1,3 @@
-Welcome to my person portfolio!
+Welcome to my personal portfolio!
 
 Here you will find my css and html code scripts as well as assets to my website.
