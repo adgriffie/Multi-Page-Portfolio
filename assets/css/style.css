@@ -1,11 +1,5 @@
-/**
-* Template Name: Personal - v2.1.0
-* Template URL: https://bootstrapmade.com/personal-free-resume-bootstrap-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 
-/* --- Addie palette --- */
+/* --- Color palette --- */
 :root{
   --space-indigo: #22223B;
   --dusty-grape:  #4A4E69;
@@ -1107,7 +1101,7 @@ section .container {
 }
 
 /* --------------------------------------------------------------
-# Palette Override (paste at very bottom)
+# Palette Override 
 -------------------------------------------------------------- */
 
 /* Background + base text */
@@ -1362,20 +1356,20 @@ i, .icon, .bx, .bi {
   color: #4A4E69 !important;        /* Dusty Grape */
 }
 
-/* If the chevron is drawn with a ::before on the <li> (common in templates) */
+/* If the chevron is drawn with a ::before on the <li>  */
 .about-me .content ul li::before {
   color: #4A4E69 !important;
   border-color: #4A4E69 !important;
 }
 
-/* If it’s an SVG (rare, but this handles it) */
+/* If it’s an SVG */
 .about-me .content ul li svg,
 .about-me .content ul li svg * {
   fill: #4A4E69 !important;
   stroke: #4A4E69 !important;
 }
 
-/* ===== Education logos: uniform sizing (safe with Bootstrap) ===== */
+/* ===== Education logos: uniform sizing ===== */
 .edu-logo-wrap{
   height: 160px;
   width: 100%;
